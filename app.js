@@ -3,6 +3,7 @@ const express = require("express");
 const bodyParser = require('body-parser');
 const users = require("./routes/api/users");
 const tweets = require("./routes/api/tweets");
+const User = require('./models/User')
 
 const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
